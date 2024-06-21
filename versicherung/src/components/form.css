@@ -1,0 +1,102 @@
+/* styles.css */
+
+/* Zentriert den gesamten Inhalt der UserForm */
+.userForm {
+    text-align: center;
+  }
+  
+  /* Container für das Formular */
+  .userForm-container {
+    border: 1px solid #ccc;
+    padding: 20px;
+    border-radius: 10px;
+    margin-top: 20px;
+    display: inline-block; /* Damit der Container nicht die volle Breite einnimmt */
+    text-align: left; /* Links ausrichten für innere Elemente */
+    background-color: #f0f0f0; /* Hintergrundfarbe für den Container */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Schatten für den Container */
+  }
+  
+  /* Stil für den Fortschrittsbalken */
+  .progress-bar {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 50%; /* Breite des Fortschrittsbalkens anpassen */
+    margin: auto; /* Zentriert den Fortschrittsbalken */
+  }
+  
+  /* Stil für die einzelnen Schritte im Fortschrittsbalken */
+  .step {
+    width: 30px; /* Größe der Schritte erhöhen */
+    height: 30px; /* Größe der Schritte erhöhen */
+    border-radius: 50%;
+    background-color: #ccc;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 14px;
+    color: #666;
+  }
+  
+  .step.completed {
+    background-color: #664de5;
+    color: white;
+  }
+  
+  /* Stil für die Buttons im Formular */
+  button {
+    background-color: #664de5; /* Hintergrundfarbe der Buttons */
+    color: white; /* Textfarbe der Buttons */
+    border: none;
+    padding: 10px 20px;
+    margin: 5px;
+    cursor: pointer;
+    border-radius: 5px;
+    font-size: 14px;
+    transition: background-color 0.3s ease;
+  }
+  
+  button:hover {
+    background-color: #512da8; /* Farbe beim Hover-Effekt */
+  }
+  
+  /* Stil für die Labels und Textfelder im Formular */
+  label {
+    display: block;
+    margin-bottom: 10px;
+    color: #333;
+  }
+  
+  input[type="text"],
+  input[type="date"],
+  select,
+  button,
+  textarea {
+    width: 100%;
+    padding: 8px;
+    margin-top: 4px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px;
+  }
+  
+  input[type="checkbox"] {
+    margin-right: 5px;
+    vertical-align: middle;
+  }
+  
+  textarea {
+    resize: vertical;
+  }
+  
+  /* Stil für die Überschriften im Formular */
+  h2 {
+    color: #333;
+    font-size: 20px;
+    margin-bottom: 15px;
+  }
+  
+  
