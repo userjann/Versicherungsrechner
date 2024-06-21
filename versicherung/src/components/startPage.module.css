@@ -37,3 +37,7 @@
 .startPage-button:hover {
   background-color: #d42c2c; /* Dunklere blaue Hintergrundfarbe beim Hover */
 }
+
+h7{
+  font-size: 3px;
+}

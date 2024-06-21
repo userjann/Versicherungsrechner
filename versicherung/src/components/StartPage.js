@@ -19,6 +19,7 @@ const StartPage = () => {
           <h1>Auto Versicherungsprämie</h1>
           <p>schnell und einfach Ihre Versicherungsprämie berechnen</p>
           <button className={`${styles['startPage-button']} form-button`} onClick={start}>Jetzt berechnen</button>
+          <h7>achtung die berechnete Prämie stimmt nicht</h7>
         </div>
       </div>
     </div>

@@ -84,7 +84,7 @@ const Summary = ({ userInput }) => {
 
   return (
     <div className="step-form-container">
-      <h2>Zusammenfassung</h2>
+ 
       <p>Fahrzeugmarke: {userInput.vehicleMake}</p>
       <p>Modell: {userInput.vehicleModel}</p>
       <p>Geleast: {userInput.vehicleLeased ? 'Ja' : 'Nein'}</p>
