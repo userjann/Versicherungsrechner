@@ -4,6 +4,7 @@ const Summary = ({ userInput }) => {
   const calculatePremium = (userInput) => {
     let basePremium = 0; 
 
+  
    
     if (userInput.vehicleMake === "Mercedes" || userInput.vehicleMake === "BMW") {
       basePremium += 100;
@@ -74,6 +75,10 @@ const Summary = ({ userInput }) => {
 
     return basePremium;
   };
+  function handleButtonClick() {
+    console.log(userInput);
+      window.location.href = '/';
+  }
 
   const premium = calculatePremium(userInput);
 
@@ -95,7 +100,7 @@ const Summary = ({ userInput }) => {
       <p>Hauptnutzer des Fahrzeugs: {userInput.vehicleMainDriver}</p>
       <p>Art der Versicherung: {userInput.insuranceType}</p>
       <p><strong>Berechnete Prämie: {premium.toFixed(2)} €</strong></p>
-      <button onClick={() => console.log(userInput)}>Versicherung abschließen</button>
+      <button onClick={handleButtonClick}>Versicherung abschließen</button>
     </div>
   );
 };
