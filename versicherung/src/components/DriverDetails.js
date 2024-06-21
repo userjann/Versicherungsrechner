@@ -42,7 +42,7 @@ const DriverDetails = ({ nextStep, handleChange }) => {
           <button
             onClick={() => handleUserClick("PRIVATPERSON")}
             style={{
-              backgroundColor: driverUser === "PRIVATPERSON" ? "#664de5" : "#fff",
+              backgroundColor: driverUser === "PRIVATPERSON" ? "#8a1c1c" : "#fff",
               color: driverUser === "PRIVATPERSON" ? "#fff" : "#000",
             }}
           >
@@ -51,7 +51,7 @@ const DriverDetails = ({ nextStep, handleChange }) => {
           <button
             onClick={() => handleUserClick("UNTERNEHMEN")}
             style={{
-              backgroundColor: driverUser === "UNTERNEHMEN" ? "#664de5" : "#fff",
+              backgroundColor: driverUser === "UNTERNEHMEN" ? "#8a1c1c" : "#fff",
               color: driverUser === "UNTERNEHMEN" ? "#fff" : "#000",
             }}
           >
@@ -67,7 +67,7 @@ const DriverDetails = ({ nextStep, handleChange }) => {
           <button
             onClick={() => handleGenderClick("MANN")}
             style={{
-              backgroundColor: driverGender === "MANN" ? "#664de5" : "#fff",
+              backgroundColor: driverGender === "MANN" ? "#8a1c1c" : "#fff",
               color: driverGender === "MANN" ? "#fff" : "#000",
             }}
           >
@@ -76,7 +76,7 @@ const DriverDetails = ({ nextStep, handleChange }) => {
           <button
             onClick={() => handleGenderClick("FRAU")}
             style={{
-              backgroundColor: driverGender === "FRAU" ? "#664de5" : "#fff",
+              backgroundColor: driverGender === "FRAU" ? "#8a1c1c" : "#fff",
               color: driverGender === "FRAU" ? "#fff" : "#000",
             }}
           >
@@ -105,7 +105,7 @@ const DriverDetails = ({ nextStep, handleChange }) => {
           <button
             onClick={() => handleMainUserClick("ICH SELBST")}
             style={{
-              backgroundColor: driverMainUser === "ICH SELBST" ? "#664de5" : "#fff",
+              backgroundColor: driverMainUser === "ICH SELBST" ? "#8a1c1c" : "#fff",
               color: driverMainUser === "ICH SELBST" ? "#fff" : "#000",
             }}
           >
@@ -114,7 +114,7 @@ const DriverDetails = ({ nextStep, handleChange }) => {
           <button
             onClick={() => handleMainUserClick("EINE ANDERE PERSON")}
             style={{
-              backgroundColor: driverMainUser === "EINE ANDERE PERSON" ? "#664de5" : "#fff",
+              backgroundColor: driverMainUser === "EINE ANDERE PERSON" ? "#8a1c1c" : "#fff",
               color: driverMainUser === "EINE ANDERE PERSON" ? "#fff" : "#000",
             }}
           >

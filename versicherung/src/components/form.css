@@ -2,9 +2,9 @@
 
 /* Zentriert den gesamten Inhalt der UserForm */
 .userForm {
-    text-align: center;
-  }
-  
+  text-align: center;
+}
+
   /* Container für das Formular */
   .userForm-container {
     border: 1px solid #ccc;
@@ -41,13 +41,13 @@
   }
   
   .step.completed {
-    background-color: #664de5;
+    background-color: #8a1c1c;
     color: white;
   }
   
   /* Stil für die Buttons im Formular */
   button {
-    background-color: #664de5; /* Hintergrundfarbe der Buttons */
+    background-color: #8a1c1c; /* Hintergrundfarbe der Buttons */
     color: white; /* Textfarbe der Buttons */
     border: none;
     padding: 10px 20px;
@@ -59,7 +59,7 @@
   }
   
   button:hover {
-    background-color: #512da8; /* Farbe beim Hover-Effekt */
+    background-color: #8a1c1c; /* Farbe beim Hover-Effekt */
   }
   
   /* Stil für die Labels und Textfelder im Formular */

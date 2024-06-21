@@ -7,7 +7,7 @@ const MultiStepProgressBar = (props) => {
     <div style={{ marginTop: "20px" }}>
       <ProgressBar
         percent={(props.step + 1) * 25}
-        filledBackground="#664de5"
+        filledBackground="#8a1c1c"
         height="2px"
         style={{ margin: "auto" }}
       >
@@ -19,7 +19,7 @@ const MultiStepProgressBar = (props) => {
                 width: "30px",
                 border: "1px solid lightgray",
                 borderRadius: "50%",
-                backgroundColor: `${accomplished ? "#664de5" : null}`
+                backgroundColor: `${accomplished ? "#8a1c1c" : null}`
               }}
               className={`step ${accomplished ? "completed" : ""}`}
             >
@@ -35,7 +35,7 @@ const MultiStepProgressBar = (props) => {
                 width: "30px",
                 border: "1px solid lightgray",
                 borderRadius: "50%",
-                backgroundColor: `${accomplished ? "#664de5" : null}`
+                backgroundColor: `${accomplished ? "#8a1c1c" : null}`
               }}
               className={`step ${accomplished ? "completed" : ""}`}
             >
@@ -51,7 +51,7 @@ const MultiStepProgressBar = (props) => {
                 width: "30px",
                 border: "1px solid lightgray",
                 borderRadius: "50%",
-                backgroundColor: `${accomplished ? "#664de5" : null}`
+                backgroundColor: `${accomplished ? "#8a1c1c" : null}`
               }}
               className={`step ${accomplished ? "completed" : ""}`}
             >
@@ -67,7 +67,7 @@ const MultiStepProgressBar = (props) => {
                 width: "30px",
                 border: "1px solid lightgray",
                 borderRadius: "50%",
-                backgroundColor: `${accomplished ? "#664de5" : null}`
+                backgroundColor: `${accomplished ? "#8a1c1c" : null}`
               }}
               className={`step ${accomplished ? "completed" : ""}`}
             >

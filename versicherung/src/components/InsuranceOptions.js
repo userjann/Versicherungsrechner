@@ -18,7 +18,7 @@ const InsuranceOptions = ({ nextStep, handleChange }) => {
         <button
           onClick={() => handleInsuranceTypeClick("Vollkasko")}
           style={{
-            backgroundColor: insuranceType === "Vollkasko" ? "#664de5" : "#fff",
+            backgroundColor: insuranceType === "Vollkasko" ? "#8a1c1c" : "#fff",
             color: insuranceType === "Vollkasko" ? "#fff" : "#000",
           }}
         >
@@ -29,7 +29,7 @@ const InsuranceOptions = ({ nextStep, handleChange }) => {
         <button
           onClick={() => handleInsuranceTypeClick("Teilkasko")}
           style={{
-            backgroundColor: insuranceType === "Teilkasko" ? "#664de5" : "#fff",
+            backgroundColor: insuranceType === "Teilkasko" ? "#8a1c1c" : "#fff",
             color: insuranceType === "Teilkasko" ? "#fff" : "#000",
           }}
         >
@@ -40,7 +40,7 @@ const InsuranceOptions = ({ nextStep, handleChange }) => {
         <button
           onClick={() => handleInsuranceTypeClick("Haftpflicht")}
           style={{
-            backgroundColor: insuranceType === "Haftpflicht" ? "#664de5" : "#fff",
+            backgroundColor: insuranceType === "Haftpflicht" ? "#8a1c1c" : "#fff",
             color: insuranceType === "Haftpflicht" ? "#fff" : "#000",
           }}
         >

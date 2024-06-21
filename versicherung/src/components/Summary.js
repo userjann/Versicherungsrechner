@@ -11,24 +11,24 @@ const Summary = ({ userInput }) => {
 
     const currentYear = new Date().getFullYear();
     const vehicleAge = currentYear - userInput.vehiclePurchaseYear;
-    basePremium += vehicleAge * 4; 
+    basePremium += vehicleAge * 2; 
 
 
     switch (userInput.vehicleAnnualMileage) {
       case "SEHR WENIG (BIS 5'000 KM)":
-        basePremium += 50;
+        basePremium += 10;
         break;
       case "WENIG (BIS 10'000 KM)":
-        basePremium += 100;
+        basePremium += 50;
         break;
       case "MITTEL (BIS 15'000 KM)":
-        basePremium += 150;
+        basePremium += 75;
         break;
       case "VIEL (BIS 20'000 KM)":
-        basePremium += 200;
+        basePremium += 100;
         break;
       case "SEHR VIEL (MEHR ALS 20'000 KM)":
-        basePremium += 250;
+        basePremium += 1000;
         break;
       default:
         break;
@@ -65,7 +65,7 @@ const Summary = ({ userInput }) => {
     }
 
     if (userInput.driverNationality === "ANDERES LAND") {
-      basePremium += 100;
+      basePremium += 1000;
     }
 
     if (userInput.vehicleMainDriver === "EINE ANDERE PERSON") {

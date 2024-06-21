@@ -17,6 +17,7 @@ const VehicleDetails = ({ nextStep, handleChange }) => {
       const response = await fetchJsonp(`https://www.carqueryapi.com/api/0.3/?callback=?&cmd=getModels&make=${brandInputRef.current.value}`);
       const jsonpData = await response.json();
       setModels(jsonpData.Models);
+      setSelectedModel(""); // Reset selected model when fetching new models
     } catch (error) {
       console.error("Error fetching models:", error);
     }
@@ -28,9 +29,9 @@ const VehicleDetails = ({ nextStep, handleChange }) => {
     }
   }, [brandInputRef.current?.value]);
 
-  const handleModelClick = (modelName) => {
-    setSelectedModel(modelName);
-    handleChange("vehicleModel")({ target: { value: modelName } });
+  const handleModelChange = (e) => {
+    setSelectedModel(e.target.value);
+    handleChange("vehicleModel")(e);
   };
 
   const handleLeaseClick = (leaseStatus) => {
@@ -73,20 +74,14 @@ const VehicleDetails = ({ nextStep, handleChange }) => {
       <br />
       <label>
         Modell:
-        <div>
-          {selectedModel ? (
-            <button disabled>{selectedModel}</button>
-          ) : (
-            models.map((model) => (
-              <button
-                key={model.model_name}
-                onClick={() => handleModelClick(model.model_name)}
-              >
-                {model.model_name}
-              </button>
-            ))
-          )}
-        </div>
+        <select value={selectedModel} onChange={handleModelChange}>
+          <option value="">-- Modell wählen --</option>
+          {models.map((model) => (
+            <option key={model.model_name} value={model.model_name}>
+              {model.model_name}
+            </option>
+          ))}
+        </select>
       </label>
       <br />
       <label>
@@ -95,7 +90,7 @@ const VehicleDetails = ({ nextStep, handleChange }) => {
           <button
             onClick={() => handleLeaseClick(true)}
             style={{
-              backgroundColor: isLeased === true ? "#664de5" : "#fff",
+              backgroundColor: isLeased === true ? "#8a1c1c" : "#fff",
               color: isLeased === true ? "#fff" : "#000",
             }}
           >
@@ -104,7 +99,7 @@ const VehicleDetails = ({ nextStep, handleChange }) => {
           <button
             onClick={() => handleLeaseClick(false)}
             style={{
-              backgroundColor: isLeased === false ? "#664de5" : "#fff",
+              backgroundColor: isLeased === false ? "#8a1c1c" : "#fff",
               color: isLeased === false ? "#fff" : "#000",
             }}
           >
@@ -119,7 +114,7 @@ const VehicleDetails = ({ nextStep, handleChange }) => {
           <button
             onClick={() => handleGarageClick(true)}
             style={{
-              backgroundColor: hasGarage === true ? "#664de5" : "#fff",
+              backgroundColor: hasGarage === true ? "#8a1c1c" : "#fff",
               color: hasGarage === true ? "#fff" : "#000",
             }}
           >
@@ -128,7 +123,7 @@ const VehicleDetails = ({ nextStep, handleChange }) => {
           <button
             onClick={() => handleGarageClick(false)}
             style={{
-              backgroundColor: hasGarage === false ? "#664de5" : "#fff",
+              backgroundColor: hasGarage === false ? "#8a1c1c" : "#fff",
               color: hasGarage === false ? "#fff" : "#000",
             }}
           >
@@ -163,7 +158,7 @@ const VehicleDetails = ({ nextStep, handleChange }) => {
               key={mileage}
               onClick={() => handleAnnualMileageClick(mileage)}
               style={{
-                backgroundColor: annualMileage === mileage ? "#664de5" : "#fff",
+                backgroundColor: annualMileage === mileage ? "#8a1c1c" : "#fff",
                 color: annualMileage === mileage ? "#fff" : "#000",
               }}
             >
@@ -179,7 +174,7 @@ const VehicleDetails = ({ nextStep, handleChange }) => {
           <button
             onClick={() => handleSpecialUsageClick("JA")}
             style={{
-              backgroundColor: specialUsage === "JA" ? "#664de5" : "#fff",
+              backgroundColor: specialUsage === "JA" ? "#8a1c1c" : "#fff",
               color: specialUsage === "JA" ? "#fff" : "#000",
             }}
           >
@@ -188,7 +183,7 @@ const VehicleDetails = ({ nextStep, handleChange }) => {
           <button
             onClick={() => handleSpecialUsageClick("NEIN")}
             style={{
-              backgroundColor: specialUsage === "NEIN" ? "#664de5" : "#fff",
+              backgroundColor: specialUsage === "NEIN" ? "#8a1c1c" : "#fff",
               color: specialUsage === "NEIN" ? "#fff" : "#000",
             }}
           >

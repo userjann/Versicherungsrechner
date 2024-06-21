@@ -8,7 +8,7 @@ import MultiStepProgressBar from "./MultiStepProgressBar";
 import "./form.css"; // Stelle sicher, dass die CSS-Datei korrekt importiert ist
 
 const UserForm = () => {
-  const [page, setPage] = useState(0);
+  const [page, setPage] = useState(1);
   const [userInput, setUserInput] = useState({
     vehicleMake: "",
     vehicleModel: "",
@@ -41,8 +41,6 @@ const UserForm = () => {
 
   const PageDisplay = () => {
     switch (page) {
-      case 0:
-        return <StartPage start={start} />;
       case 1:
         return <VehicleDetails nextStep={nextStep} handleChange={handleChange} />;
       case 2:
@@ -51,8 +49,7 @@ const UserForm = () => {
         return <InsuranceOptions nextStep={nextStep} handleChange={handleChange} />;
       case 4:
         return <Summary userInput={userInput} />;
-      default:
-        return <StartPage start={start} />;
+     
     }
   };
 

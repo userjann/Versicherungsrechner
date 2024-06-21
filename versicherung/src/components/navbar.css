@@ -1,0 +1,28 @@
+/* navbar.module.css */
+
+.navbar {
+  background-color: #8a1c1c; /* Hintergrundfarbe */
+  padding: 10px 20px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Leichter Schatten */
+}
+
+.navbar-nav {
+  list-style-type: none;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end; /* Elemente rechts ausrichten */
+}
+
+.nav-item {
+  margin-right: 10px;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  padding: 8px 12px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
