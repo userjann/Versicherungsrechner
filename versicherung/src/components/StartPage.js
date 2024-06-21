@@ -1,14 +1,13 @@
-// StartPage.js
 import React from 'react';
-import { useNavigate } from 'react-router-dom'; // Importieren Sie useNavigate aus react-router-dom
-import styles from './startPage.module.css'; // CSS-Modul für das Styling der Startseite
-import Navbar from './navbar'; // Importiere die Navbar-Komponente
+import { useNavigate } from 'react-router-dom'; 
+import styles from './startPage.module.css'; 
+import Navbar from './navbar';
 
 const StartPage = () => {
-  const navigate = useNavigate(); // Hook verwenden, um Navigation zu steuern
+  const navigate = useNavigate(); 
 
   const start = () => {
-    navigate('/userform'); // Navigiere zur UserForm-Komponente beim Klicken auf den Button
+    navigate('/userform');
   };
 
   return (

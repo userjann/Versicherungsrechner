@@ -17,7 +17,7 @@ const VehicleDetails = ({ nextStep, handleChange }) => {
       const response = await fetchJsonp(`https://www.carqueryapi.com/api/0.3/?callback=?&cmd=getModels&make=${brandInputRef.current.value}`);
       const jsonpData = await response.json();
       setModels(jsonpData.Models);
-      setSelectedModel(""); // Reset selected model when fetching new models
+      setSelectedModel(""); 
     } catch (error) {
       console.error("Error fetching models:", error);
     }

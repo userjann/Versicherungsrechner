@@ -5,7 +5,7 @@ import InsuranceOptions from "./InsuranceOptions";
 import Summary from "./Summary";
 import StartPage from "./StartPage";
 import MultiStepProgressBar from "./MultiStepProgressBar";
-import "./form.css"; // Stelle sicher, dass die CSS-Datei korrekt importiert ist
+import "./form.css";
 
 const UserForm = () => {
   const [page, setPage] = useState(1);

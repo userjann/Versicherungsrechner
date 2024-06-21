@@ -1,11 +1,9 @@
-/* startPage.module.css */
-
 .startPage {
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh; /* Vollständige Bildschirmhöhe */
-  background-color: #f0f0f0; /* Hintergrundfarbe */
+  height: 100vh; 
+  background-color: #f0f0f0;
 }
 
 .startPage-content {
@@ -15,27 +13,27 @@
 .startPage-content h1 {
   font-size: 2.5rem;
   margin-bottom: 1rem;
-  color: #333; /* Dunkle Textfarbe */
+  color: #333; 
 }
 
 .startPage-content p {
   font-size: 1.2rem;
   margin-bottom: 2rem;
-  color: #666; /* Mittlere Textfarbe */
+  color: #666; 
 }
 
 .startPage-button {
   padding: 10px 20px;
   font-size: 1.2rem;
-  background-color: #8a1c1c; /* Blaue Hintergrundfarbe */
-  color: white; /* Weiße Textfarbe */
+  background-color: #8a1c1c;
+  color: white; 
   border: none;
   cursor: pointer;
   transition: background-color 0.3s ease;
 }
 
 .startPage-button:hover {
-  background-color: #d42c2c; /* Dunklere blaue Hintergrundfarbe beim Hover */
+  background-color: #d42c2c; 
 }
 
 h7{

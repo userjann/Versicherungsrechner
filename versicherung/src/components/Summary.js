@@ -2,7 +2,7 @@ import React from "react";
 import "./form.css"; 
 const Summary = ({ userInput }) => {
   const calculatePremium = (userInput) => {
-    let basePremium = 0; 
+    let basePremium = 100; 
 
   
    
@@ -29,7 +29,7 @@ const Summary = ({ userInput }) => {
         basePremium += 100;
         break;
       case "SEHR VIEL (MEHR ALS 20'000 KM)":
-        basePremium += 1000;
+        basePremium += 125;
         break;
       default:
         break;
@@ -66,7 +66,7 @@ const Summary = ({ userInput }) => {
     }
 
     if (userInput.driverNationality === "ANDERES LAND") {
-      basePremium += 1000;
+      basePremium += 100;
     }
 
     if (userInput.vehicleMainDriver === "EINE ANDERE PERSON") {
@@ -99,7 +99,7 @@ const Summary = ({ userInput }) => {
       <p>Nationalität: {userInput.driverNationality}</p>
       <p>Hauptnutzer des Fahrzeugs: {userInput.vehicleMainDriver}</p>
       <p>Art der Versicherung: {userInput.insuranceType}</p>
-      <p><strong>Berechnete Prämie: {premium.toFixed(2)} €</strong></p>
+      <p><strong>Berechnete Prämie: {premium.toFixed(2)} Fr.</strong></p>
       <button onClick={handleButtonClick}>Versicherung abschließen</button>
     </div>
   );

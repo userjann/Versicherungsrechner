@@ -14,7 +14,7 @@ const InsuranceOptions = ({ nextStep, handleChange }) => {
       <h2>Versicherungsoptionen</h2>
       
       <div>
-        <h4>Massgeschneiderte Sicherheit</h4>
+        
         <button
           onClick={() => handleInsuranceTypeClick("Vollkasko")}
           style={{
