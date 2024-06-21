@@ -9,5 +9,6 @@ node ist installiert
 
 Projekt starten:
 
+im richtigen Verzeichnis
 npm start
 
